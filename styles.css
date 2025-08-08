@@ -1,0 +1,76 @@
+/* Общие стили страницы */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Заголовок сайта */
+.site-header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #007acc;
+  color: white;
+}
+
+.site-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Главный контейнер */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap; /* Карточки будут переноситься на маленьких экранах */
+}
+
+/* Стиль карточки */
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #007acc;
+}
+
+/* Эффект при наведении */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Стиль изображения */
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid #007acc;
+}
+
+/* Содержимое карточки */
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.3em;
+}
+
+.card-content p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.card-content p strong {
+  color: #007acc;
+}
